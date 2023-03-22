@@ -8,7 +8,7 @@ RUN a2enmod rewrite
 
 RUN apt-get install zip unzip
 
-COPY . /var/www/html/
+#COPY . /var/www/html/
 
 #RUN unzip /var/www/html/Sentrifugo.zip -d /var/www/html/
 #
