@@ -55,6 +55,7 @@ class Timemanagement_IndexController extends Zend_Controller_Action
 	 */
 	public function indexAction()
 	{
+
 		$usersModel = new Timemanagement_Model_Users();
 		$storage = new Zend_Auth_Storage_Session();
 		$data = $storage->read();
