@@ -24,21 +24,62 @@
     <link rel="stylesheet" href="<?php echo MEDIA_PATH?>css/screen.css">
 
 <style>
-  table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
+    .list-container .list-item {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        min-height: 100px;
+        background-color: #edf1f5;
+        position: relative;
+        margin-bottom: 12px;
+    }
 
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+    .list-container .list-item .li-head {
+        float: left;
+        background-color: #edf1f5;
+        width: 50%;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        display: flex;
+        align-items: center;
+    }
+    .list-container .list-item .li-head .li-emp-details {
+        float: left;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0 20px;
+    }
+    .list-container .list-item .li-head .li-emp-details span {
+        display: block;
+        line-height: 20px;
+        float: none;
+        width: calc(100%/3);
+    }
+    .list-container .list-item .li-body {
+        float: left;
+        padding: 0;
+        background-color: #edf1f5;
+        width: 50%;
+    }
+    .list-container .list-item .li-body ul {
+        list-style: none;
+        padding-top: 31px;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        margin: 0 -15px;
+    }
+    .list-container .list-item .li-body ul li {
+        font-size: 14px;
+        color: #666666;
+        width: 204px;
+        word-wrap: break-word;
+        vertical-align: text-bottom;
+        align-items: center;
+        display: flex;
+        padding: 0 15px;
+    }
 </style>
 
     <?php
