@@ -133,9 +133,10 @@ if (!empty($this->dataArray[0])) { ?>
     <div class="list-container" id="more_employees">
         <table>
             <tr>
-                <th>Company</th>
+                <th>Basic information</th>
                 <th>Contact</th>
                 <th>Country</th>
+                <th>Action</th>
             </tr>
             <?php
             foreach ($this->dataArray as $data) {
@@ -154,24 +155,6 @@ if (!empty($this->dataArray[0])) { ?>
                                                 class="emp-name"><?php echo $emp['userfullname']; ?></span>
                                         <span class="emp-designation"><?php echo $emp['emprole_name']; ?></span> <span
                                                 class="emp-department"><?php echo $emp['department_name']; ?></span>
-                                    </div>
-                                    <div class="li-actions"><a class='dropdown-button dottedbtn' href='#'
-                                                               data-activates='actdbtn-<?php echo $emp['id']; ?>'><i
-                                                    class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
-                                        <!-- Dropdown Structure -->
-                                        <ul id='actdbtn-<?php echo $emp['id']; ?>' class='dropdown-content'>
-                                            <?php
-
-                                            if (sapp_Global::_checkprivileges(EMPLOYEE, $loginuserGroup, $loginuserRole, 'view') == 'Yes') {
-                                                ?>
-                                                <li><a href="<?php echo BASE_URL . 'employee/view/id/' . $emp['id'];
-                                                    ?>"><i class="fa fa-eye"></i> View</a></li>
-                                            <?php } ?>
-                                            <?php if (sapp_Global::_checkprivileges(EMPLOYEE, $loginuserGroup, $loginuserRole, 'edit') == 'Yes') { ?>
-                                                <li><a href="<?php echo BASE_URL . 'employee/edit/id/' . $emp['id'];
-                                                    ?>"><i class="fa fa-edit"></i> Edit</a></li>
-                                            <?php } ?>
-                                        </ul>
                                     </div>
                                 </div>
                                 <a href="<?php echo BASE_URL . 'employee/view/id/' . $emp['id']; ?>">
@@ -193,6 +176,22 @@ if (!empty($this->dataArray[0])) { ?>
                         </td>
                         <td><?php echo $emp['reporting_manager_name'] ?></td>
                         <td><?php echo $emp['emp_status_name'] ?></td>
+                        <td>
+                            <div>
+                                <?php
+                                if (sapp_Global::_checkprivileges(EMPLOYEE, $loginuserGroup, $loginuserRole, 'view') == 'Yes') {
+                                    ?>
+                                    <button><a href="<?php echo BASE_URL . 'employee/view/id/' . $emp['id'];
+                                        ?>"><i class="fa fa-eye"></i> View</a></button>
+                                <?php } ?>
+                            </div>
+                            <div>
+                                <?php if (sapp_Global::_checkprivileges(EMPLOYEE, $loginuserGroup, $loginuserRole, 'edit') == 'Yes') { ?>
+                                    <button><a href="<?php echo BASE_URL . 'employee/edit/id/' . $emp['id'];
+                                        ?>"><i class="fa fa-edit"></i> Edit</a></button>
+                                <?php } ?>
+                            </div>
+                        </td>
                     </tr>
 
 
