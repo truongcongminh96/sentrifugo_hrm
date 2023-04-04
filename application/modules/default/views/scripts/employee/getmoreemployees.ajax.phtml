@@ -32,7 +32,6 @@ if ($this->empflag == 'myemployees') {
 ?>
 <?php if ($this->totalcount > 0) { ?>
 <table>
-    
     <tr>
         <th>userfullname</th>
         <th>emprole_name</th>
@@ -49,12 +48,12 @@ if ($this->empflag == 'myemployees') {
         foreach ($data as $emp) {
             ?>
             <tr>
-                <td><?php echo $emp['userfullname'] ?></td>
-                <td><?php echo $emp['emprole_name'] ?></td>
-                <td><?php echo $emp['department_name'] ?></td>
+                <td style="width: 150px;"><?php echo $emp['userfullname'] ?></td>
+                <td style="width: 100px;"><?php echo $emp['emprole_name'] ?></td>
+                <td style="width: 50px;"><?php echo $emp['department_name'] ?></td>
 
-                <td><?php echo $emp['employeeId'] ?></td>
-                <td><?php echo $emp['emailaddress'] ?></td>
+                <td style="width: 50px;"><?php echo $emp['employeeId'] ?></td>
+                <td style="width: 181px; max-width: 250px;"><?php echo $emp['emailaddress'] ?></td>
                 <td><?php echo $emp['contactnumber'] ?></td>
 
                 <td><?php echo $emp['reporting_manager_name'] ?></td>
