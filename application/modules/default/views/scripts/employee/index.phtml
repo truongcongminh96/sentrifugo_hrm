@@ -131,28 +131,30 @@ if (!empty($this->dataArray[0])) { ?>
 <div id="employees_search" class="full-width">
     <?php if ($this->totalcount > 0) { ?>
     <div class="list-container" id="more_employees">
-        <?php
-        foreach ($this->dataArray as $data) {
-            foreach ($data as $emp) {
-
-                ?>
-                <table>
-                    <tr>
-                        <th>Basic info</th>
-                        <th>reporting_manager_name</th>
-                        <th>emp_status_name</th>
-                    </tr>
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <?php
+            foreach ($this->dataArray as $data) {
+                foreach ($data as $emp) {
+                    ?>
                     <tr>
                         <td>
                             <div class="list-item">
                                 <div class="li-head">
                                     <div class="li-avatar"><img
                                                 src="<?php echo $baseUrl; ?>/public/uploads/profile/<?php echo $emp['profileimg']; ?>"
-                                                onerror="this.src='<?php echo MEDIA_PATH; ?>images/profile_pic.png'" width="54"
+                                                onerror="this.src='<?php echo MEDIA_PATH; ?>images/profile_pic.png'"
+                                                width="54"
                                                 height="54"/></div>
-                                    <div class="li-emp-details"><span class="emp-name"><?php echo $emp['userfullname']; ?></span>
+                                    <div class="li-emp-details"><span
+                                                class="emp-name"><?php echo $emp['userfullname']; ?></span>
                                         <span class="emp-designation"><?php echo $emp['emprole_name']; ?></span> <span
-                                                class="emp-department"><?php echo $emp['department_name']; ?></span></div>
+                                                class="emp-department"><?php echo $emp['department_name']; ?></span>
+                                    </div>
                                     <div class="li-actions"><a class='dropdown-button dottedbtn' href='#'
                                                                data-activates='actdbtn-<?php echo $emp['id']; ?>'><i
                                                     class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
@@ -176,11 +178,14 @@ if (!empty($this->dataArray[0])) { ?>
                                     <div class="li-body">
                                         <ul>
                                             <li><i class="fa fa-user"
-                                                   aria-hidden="true"></i><span><?php echo $emp['employeeId']; ?></span></li>
+                                                   aria-hidden="true"></i><span><?php echo $emp['employeeId']; ?></span>
+                                            </li>
                                             <li><i class="fa fa-envelope"
-                                                   aria-hidden="true"></i><span><?php echo $emp['emailaddress']; ?></span></li>
+                                                   aria-hidden="true"></i><span><?php echo $emp['emailaddress']; ?></span>
+                                            </li>
                                             <li><i class="fa fa-phone"
-                                                   aria-hidden="true"></i><span><?php echo $emp['contactnumber']; ?></span></li>
+                                                   aria-hidden="true"></i><span><?php echo $emp['contactnumber']; ?></span>
+                                            </li>
                                         </ul>
                                     </div>
                                 </a>
@@ -189,17 +194,17 @@ if (!empty($this->dataArray[0])) { ?>
                         <td><?php echo $emp['reporting_manager_name'] ?></td>
                         <td><?php echo $emp['emp_status_name'] ?></td>
                     </tr>
-                </table>
 
 
-                <?php
+                    <?php
+                }
             }
-        }
-        }
-        else {
-            echo "<p class='no-data'>No Data Found</p>";
-        }
-        ?>
+            }
+            else {
+                echo "<p class='no-data'>No Data Found</p>";
+            }
+            ?>
+        </table>
     </div>
 </div>
 <!--<div id="employees" class="full-width"></div>-->
