@@ -1,1 +1,178 @@
 
+2023/04/05 at 04:59 PM CRIT (2): <div class="page-not-404"><div class="div503"></div><p class="page-text">Application error</p><p class="sry-text">Sorry, but the page you are looking for has not been found. Try checking URL for errors, then hit the refresh button on your browser</p></div> Zend_View_Exception: script 'employee/getmoreemployees.phtml' not found in path (/var/www/html/application/modules/default/views/scripts/:/var/www/html/application/) in /var/www/html/Zend/View/Abstract.php:988
+Stack trace:
+#0 /var/www/html/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('employee/getmor...')
+#1 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('employee/getmor...')
+#2 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('employee/getmor...', NULL)
+#3 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /var/www/html/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /var/www/html/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /var/www/html/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('getmoreemployee...')
+#7 /var/www/html/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /var/www/html/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#9 /var/www/html/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#10 /var/www/html/index.php(99): Zend_Application->run()
+#11 {main}2023/04/05 at 04:59 PM CRIT (2): Request Parameters: array (
+  'controller' => 'employee',
+  'action' => 'getmoreemployees',
+  'format' => 'html',
+  'module' => 'default',
+)2023/04/05 at 05:00 PM CRIT (2): <div class="page-not-404"><div class="div503"></div><p class="page-text">Application error</p><p class="sry-text">Sorry, but the page you are looking for has not been found. Try checking URL for errors, then hit the refresh button on your browser</p></div> Zend_View_Exception: script 'employee/getmoreemployees.phtml' not found in path (/var/www/html/application/modules/default/views/scripts/:/var/www/html/application/) in /var/www/html/Zend/View/Abstract.php:988
+Stack trace:
+#0 /var/www/html/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('employee/getmor...')
+#1 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('employee/getmor...')
+#2 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('employee/getmor...', NULL)
+#3 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /var/www/html/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /var/www/html/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /var/www/html/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('getmoreemployee...')
+#7 /var/www/html/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /var/www/html/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#9 /var/www/html/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#10 /var/www/html/index.php(99): Zend_Application->run()
+#11 {main}2023/04/05 at 05:00 PM CRIT (2): Request Parameters: array (
+  'controller' => 'employee',
+  'action' => 'getmoreemployees',
+  'format' => 'html',
+  'module' => 'default',
+)2023/04/05 at 05:05 PM CRIT (2): <div class="page-not-404"><div class="div503"></div><p class="page-text">Application error</p><p class="sry-text">Sorry, but the page you are looking for has not been found. Try checking URL for errors, then hit the refresh button on your browser</p></div> Zend_View_Exception: script 'employee/getmoreemployeesmore.ajax.phtml' not found in path (/var/www/html/application/modules/default/views/scripts/:/var/www/html/application/) in /var/www/html/Zend/View/Abstract.php:988
+Stack trace:
+#0 /var/www/html/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('employee/getmor...')
+#1 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('employee/getmor...')
+#2 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('employee/getmor...', NULL)
+#3 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /var/www/html/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /var/www/html/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /var/www/html/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('getmoreemployee...')
+#7 /var/www/html/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /var/www/html/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#9 /var/www/html/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#10 /var/www/html/index.php(99): Zend_Application->run()
+#11 {main}2023/04/05 at 05:05 PM CRIT (2): Request Parameters: array (
+  'controller' => 'employee',
+  'action' => 'getmoreemployeesmore',
+  'format' => 'html',
+  'module' => 'default',
+  'limit' => '20',
+  'offset' => '20',
+  'search_val' => '',
+  'search_str' => '',
+  'count_remaining' => '3',
+  'role_id' => '',
+  'flag' => '1',
+  'empflag' => 'employees',
+)2023/04/05 at 05:06 PM CRIT (2): <div class="page-not-404"><div class="div503"></div><p class="page-text">Application error</p><p class="sry-text">Sorry, but the page you are looking for has not been found. Try checking URL for errors, then hit the refresh button on your browser</p></div> Zend_View_Exception: script 'employee/getmoreemployeesmore.ajax.phtml' not found in path (/var/www/html/application/modules/default/views/scripts/:/var/www/html/application/) in /var/www/html/Zend/View/Abstract.php:988
+Stack trace:
+#0 /var/www/html/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('employee/getmor...')
+#1 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('employee/getmor...')
+#2 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('employee/getmor...', NULL)
+#3 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /var/www/html/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /var/www/html/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /var/www/html/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('getmoreemployee...')
+#7 /var/www/html/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /var/www/html/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#9 /var/www/html/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#10 /var/www/html/index.php(99): Zend_Application->run()
+#11 {main}2023/04/05 at 05:06 PM CRIT (2): Request Parameters: array (
+  'controller' => 'employee',
+  'action' => 'getmoreemployeesmore',
+  'format' => 'html',
+  'module' => 'default',
+  'limit' => '20',
+  'offset' => '20',
+  'search_val' => '',
+  'search_str' => '',
+  'count_remaining' => '3',
+  'role_id' => '',
+  'flag' => '1',
+  'empflag' => 'employees',
+)2023/04/05 at 05:08 PM CRIT (2): <div class="page-not-404"><div class="div503"></div><p class="page-text">Application error</p><p class="sry-text">Sorry, but the page you are looking for has not been found. Try checking URL for errors, then hit the refresh button on your browser</p></div> Zend_View_Exception: script 'employee/getmoreemployeesmore.phtml' not found in path (/var/www/html/application/modules/default/views/scripts/:/var/www/html/application/) in /var/www/html/Zend/View/Abstract.php:988
+Stack trace:
+#0 /var/www/html/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('employee/getmor...')
+#1 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('employee/getmor...')
+#2 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('employee/getmor...', NULL)
+#3 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /var/www/html/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /var/www/html/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /var/www/html/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('getmoreemployee...')
+#7 /var/www/html/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /var/www/html/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#9 /var/www/html/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#10 /var/www/html/index.php(99): Zend_Application->run()
+#11 {main}2023/04/05 at 05:08 PM CRIT (2): Request Parameters: array (
+  'controller' => 'employee',
+  'action' => 'getmoreemployeesmore',
+  'format' => 'html',
+  'module' => 'default',
+)2023/04/05 at 05:08 PM CRIT (2): <div class="page-not-404"><div class="div503"></div><p class="page-text">Application error</p><p class="sry-text">Sorry, but the page you are looking for has not been found. Try checking URL for errors, then hit the refresh button on your browser</p></div> Zend_View_Exception: script 'employee/getmoreemployees.phtml' not found in path (/var/www/html/application/modules/default/views/scripts/:/var/www/html/application/) in /var/www/html/Zend/View/Abstract.php:988
+Stack trace:
+#0 /var/www/html/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('employee/getmor...')
+#1 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('employee/getmor...')
+#2 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('employee/getmor...', NULL)
+#3 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /var/www/html/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /var/www/html/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /var/www/html/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('getmoreemployee...')
+#7 /var/www/html/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /var/www/html/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#9 /var/www/html/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#10 /var/www/html/index.php(99): Zend_Application->run()
+#11 {main}2023/04/05 at 05:08 PM CRIT (2): Request Parameters: array (
+  'controller' => 'employee',
+  'action' => 'getmoreemployees',
+  'format' => 'html',
+  'module' => 'default',
+)2023/04/05 at 05:08 PM CRIT (2): <div class="page-not-404"><div class="div503"></div><p class="page-text">Application error</p><p class="sry-text">Sorry, but the page you are looking for has not been found. Try checking URL for errors, then hit the refresh button on your browser</p></div> Zend_View_Exception: script 'employee/getmoreemployees.phtml' not found in path (/var/www/html/application/modules/default/views/scripts/:/var/www/html/application/) in /var/www/html/Zend/View/Abstract.php:988
+Stack trace:
+#0 /var/www/html/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('employee/getmor...')
+#1 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('employee/getmor...')
+#2 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('employee/getmor...', NULL)
+#3 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /var/www/html/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /var/www/html/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /var/www/html/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('getmoreemployee...')
+#7 /var/www/html/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /var/www/html/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#9 /var/www/html/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#10 /var/www/html/index.php(99): Zend_Application->run()
+#11 {main}2023/04/05 at 05:08 PM CRIT (2): Request Parameters: array (
+  'controller' => 'employee',
+  'action' => 'getmoreemployees',
+  'format' => 'html',
+  'module' => 'default',
+  'limit' => '20',
+  'offset' => '20',
+  'search_val' => '',
+  'search_str' => '',
+  'count_remaining' => '3',
+  'role_id' => '',
+  'flag' => '1',
+  'empflag' => 'employees',
+)2023/04/05 at 05:08 PM CRIT (2): <div class="page-not-404"><div class="div503"></div><p class="page-text">Application error</p><p class="sry-text">Sorry, but the page you are looking for has not been found. Try checking URL for errors, then hit the refresh button on your browser</p></div> Zend_View_Exception: script 'employee/getmoreemployeesmore.phtml' not found in path (/var/www/html/application/modules/default/views/scripts/:/var/www/html/application/) in /var/www/html/Zend/View/Abstract.php:988
+Stack trace:
+#0 /var/www/html/Zend/View/Abstract.php(884): Zend_View_Abstract->_script('employee/getmor...')
+#1 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('employee/getmor...')
+#2 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('employee/getmor...', NULL)
+#3 /var/www/html/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 /var/www/html/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 /var/www/html/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 /var/www/html/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('getmoreemployee...')
+#7 /var/www/html/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 /var/www/html/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#9 /var/www/html/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#10 /var/www/html/index.php(99): Zend_Application->run()
+#11 {main}2023/04/05 at 05:08 PM CRIT (2): Request Parameters: array (
+  'controller' => 'employee',
+  'action' => 'getmoreemployeesmore',
+  'format' => 'html',
+  'module' => 'default',
+  'limit' => '20',
+  'offset' => '20',
+  'search_val' => '',
+  'search_str' => '',
+  'count_remaining' => '3',
+  'role_id' => '',
+  'flag' => '1',
+  'empflag' => 'employees',
+)

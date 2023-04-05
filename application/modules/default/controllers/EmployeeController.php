@@ -31,6 +31,7 @@ class Default_EmployeeController extends Zend_Controller_Action
 		$ajaxContext->addActionContext('getempreportingmanagers', 'html')->initContext();
 		$ajaxContext->addActionContext('getindividualempdetails', 'html')->initContext();
 		$ajaxContext->addActionContext('getmoreemployees', 'html')->initContext();
+//        $ajaxContext->addActionContext('getmoreemployeesmore', 'html')->initContext();
 	}
 
 	public function init()
@@ -177,6 +178,11 @@ class Default_EmployeeController extends Zend_Controller_Action
 				$this->view->inc_offset = $offset + $limit;
 			
 	}
+
+    public function getmoreemployeesmoreAction()
+    {
+        $this->getmoreemployeesAction();
+    }
 	public function addorganisationhead($loginUserId)
 	{
 			$user_model = new Default_Model_Usermanagement();

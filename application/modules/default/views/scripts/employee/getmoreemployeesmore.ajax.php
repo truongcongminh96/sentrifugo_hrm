@@ -31,24 +31,24 @@ if ($this->empflag == 'myemployees') {
 }
 ?>
 <?php if ($this->totalcount > 0) { ?>
-<table style="margin-top: 20px">
+
 
     <?php
     foreach ($this->dataArray as $data) {
         foreach ($data as $emp) {
             ?>
             <tr>
-                <td style="width: 150px;"><?php echo $emp['userfullname'] ?></td>
-                <td style="width: 99px;"><?php echo $emp['emprole_name'] ?></td>
-                <td style="width: 103px;"><?php echo $emp['department_name'] ?></td>
+                <td ><?php echo $emp['userfullname'] ?></td>
+                <td><?php echo $emp['emprole_name'] ?></td>
+                <td ><?php echo $emp['department_name'] ?></td>
 
-                <td style="width: 50px;"><?php echo $emp['employeeId'] ?></td>
-                <td style="width: 183px; max-width: 250px;"><?php echo $emp['emailaddress'] ?></td>
-                <td style="width: 100px;"><?php echo $emp['contactnumber'] ?></td>
+                <td ><?php echo $emp['employeeId'] ?></td>
+                <td ><?php echo $emp['emailaddress'] ?></td>
+                <td ><?php echo $emp['contactnumber'] ?></td>
 
-                <td style="width: 150px;"><?php echo $emp['reporting_manager_name'] ?></td>
-                <td style="width: 103px;"><?php echo $emp['emp_status_name'] ?></td>
-                <td style="width: 70px;">
+                <td><?php echo $emp['reporting_manager_name'] ?></td>
+                <td ><?php echo $emp['emp_status_name'] ?></td>
+                <td>
                     <?php
                     if (sapp_Global::_checkprivileges($roleflag, $loginuserGroup, $loginuserRole, 'view') == 'Yes') {
                         ?>
@@ -73,7 +73,7 @@ if ($this->empflag == 'myemployees') {
         echo "<p class='no-data'>No Data Found</p>";
     }
     ?>
-</table>
+
 <script type="text/javascript">
     $(document).ready(function () {
         var offsetval = '<?php echo $this->inc_offset;?>';

@@ -6429,7 +6429,7 @@ function viewmore()
 		var dataparam = ''; 
 		dataparam = 'limit='+limit+'&offset='+offset+'&search_val='+search_val+'&search_str='+search_str+'&count_remaining='+count_remaining+'&role_id='+role_id+'&flag='+1+'&empflag='+empflag;
 		$.ajax({
-                url: base_url+"/employee/getmoreemployees/format/html",   				
+                url: base_url+"/employee/getmoreemployeesmore/format/html",
 				type : 'POST',	
 				data : dataparam,
 				dataType: 'html',
@@ -6437,7 +6437,7 @@ function viewmore()
 				
 				},
 				success : function(data){	
-				$('#more_employees').append(data);
+				$("#more_employees>tbody").append(data);
 				        
 						}
 			});

@@ -130,8 +130,8 @@ if (!empty($this->dataArray[0])) { ?>
 <?php } ?>
 <div id="employees_search" class="full-width">
     <?php if ($this->totalcount > 0) { ?>
-    <div class="list-container" id="more_employees">
-        <table>
+    <div class="list-container" >
+        <table id="more_employees">
             <tr>
                 <th>userfullname</th>
                 <th>emprole_name</th>
@@ -163,8 +163,8 @@ if (!empty($this->dataArray[0])) { ?>
                             <?php
                             if (sapp_Global::_checkprivileges(EMPLOYEE, $loginuserGroup, $loginuserRole, 'view') == 'Yes') {
                                 ?>
-                                <button><a href="<?php echo BASE_URL . 'employee/view/id/' . $emp['id'];
-                                    ?>"></a><i class="fa fa-eye"></i></button>
+                               <a href="<?php echo BASE_URL . 'employee/view/id/' . $emp['id'];
+                                    ?>"></a><i class="fa fa-eye"></i>
                             <?php } ?>
 
 

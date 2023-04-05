@@ -304,7 +304,7 @@ protected function _getAcl()
                     $acl->allow('admin', 'default:empleavesummary', array('index','statusid','view','delete'));
 
 		 $acl->addResource(new Zend_Acl_Resource('default:employee'));
-                    $acl->allow('admin', 'default:employee', array('getemprequi','index','getmoreemployees','changeorghead','add','edit','view','getdepartments','getpositions','delete','getempreportingmanagers','makeactiveinactive','changereportingmanager','addemppopup','uploadexcel','getindividualempdetails'));
+                    $acl->allow('admin', 'default:employee', array('getemprequi','index','getmoreemployees','getmoreemployeesmore','changeorghead','add','edit','view','getdepartments','getpositions','delete','getempreportingmanagers','makeactiveinactive','changereportingmanager','addemppopup','uploadexcel','getindividualempdetails'));
 
 		 $acl->addResource(new Zend_Acl_Resource('default:employeeleavetypes'));
                     $acl->allow('admin', 'default:employeeleavetypes', array('index','view','edit','delete'));
@@ -760,7 +760,7 @@ protected function _getAcl()
                             $acl->allow('management', 'default:empleavesummary', array('index','statusid','view','Employee Leave Summary'));
 
 		 $acl->addResource(new Zend_Acl_Resource('default:employee'));
-                            $acl->allow('management', 'default:employee', array('getemprequi','index','getmoreemployees','changeorghead','getdepartments','getpositions','getempreportingmanagers','makeactiveinactive','changereportingmanager','addemppopup','uploadexcel','getindividualempdetails','add','edit','view','Employees'));
+                            $acl->allow('management', 'default:employee', array('getemprequi','index','getmoreemployees','getmoreemployeesmore','changeorghead','getdepartments','getpositions','getempreportingmanagers','makeactiveinactive','changereportingmanager','addemppopup','uploadexcel','getindividualempdetails','add','edit','view','Employees'));
 
 		 $acl->addResource(new Zend_Acl_Resource('default:employeeleavetypes'));
                             $acl->allow('management', 'default:employeeleavetypes', array('index','add','edit','delete','view','Leave Types'));
@@ -1139,7 +1139,7 @@ protected function _getAcl()
                             $acl->allow('manager', 'default:disciplinaryteamincidents', array('index','view','Team Incidents'));
 
 		 $acl->addResource(new Zend_Acl_Resource('default:employee'));
-                            $acl->allow('manager', 'default:employee', array('getemprequi','index','getmoreemployees','changeorghead','getdepartments','getpositions','getempreportingmanagers','makeactiveinactive','changereportingmanager','addemppopup','uploadexcel','getindividualempdetails','view','Employees'));
+                            $acl->allow('manager', 'default:employee', array('getemprequi','index','getmoreemployees','getmoreemployeesmore','changeorghead','getdepartments','getpositions','getempreportingmanagers','makeactiveinactive','changereportingmanager','addemppopup','uploadexcel','getindividualempdetails','view','Employees'));
 
 		 $acl->addResource(new Zend_Acl_Resource('default:feedforwardemployee'));
                             $acl->allow('manager', 'default:feedforwardemployee', array('index','save','edit','view','Appraise Your Manager'));
@@ -1395,7 +1395,7 @@ protected function _getAcl()
                             $acl->allow('hrmanager', 'default:empleavesummary', array('index','statusid','view','Employee Leave Summary'));
 
 		 $acl->addResource(new Zend_Acl_Resource('default:employee'));
-                            $acl->allow('hrmanager', 'default:employee', array('getemprequi','index','getmoreemployees','changeorghead','getdepartments','getpositions','getempreportingmanagers','makeactiveinactive','changereportingmanager','addemppopup','uploadexcel','getindividualempdetails','add','edit','view','Employees'));
+                            $acl->allow('hrmanager', 'default:employee', array('getemprequi','index','getmoreemployees','getmoreemployeesmore','changeorghead','getdepartments','getpositions','getempreportingmanagers','makeactiveinactive','changereportingmanager','addemppopup','uploadexcel','getindividualempdetails','add','edit','view','Employees'));
 
 		 $acl->addResource(new Zend_Acl_Resource('default:employeeleavetypes'));
                             $acl->allow('hrmanager', 'default:employeeleavetypes', array('index','add','edit','view','Leave Types'));
@@ -1687,7 +1687,7 @@ protected function _getAcl()
                             $acl->allow('employee', 'default:disciplinaryteamincidents', array('index','view','Team Incidents'));
 
 		 $acl->addResource(new Zend_Acl_Resource('default:employee'));
-                            $acl->allow('employee', 'default:employee', array('getemprequi','index','getmoreemployees','changeorghead','getdepartments','getpositions','getempreportingmanagers','makeactiveinactive','changereportingmanager','addemppopup','uploadexcel','getindividualempdetails','view','Employees'));
+                            $acl->allow('employee', 'default:employee', array('getemprequi','index','getmoreemployees','getmoreemployeesmore','changeorghead','getdepartments','getpositions','getempreportingmanagers','makeactiveinactive','changereportingmanager','addemppopup','uploadexcel','getindividualempdetails','view','Employees'));
 
 		 $acl->addResource(new Zend_Acl_Resource('default:feedforwardemployee'));
                             $acl->allow('employee', 'default:feedforwardemployee', array('index','save','edit','view','Appraise Your Manager'));
@@ -1972,7 +1972,7 @@ protected function _getAcl()
                             $acl->allow('sysadmin', 'default:emailcontacts', array('index','getgroupoptions','getmailcnt','add','edit','delete','view','Email Contacts'));
 
 		 $acl->addResource(new Zend_Acl_Resource('default:employee'));
-                            $acl->allow('sysadmin', 'default:employee', array('getemprequi','index','getmoreemployees','changeorghead','getdepartments','getpositions','getempreportingmanagers','makeactiveinactive','changereportingmanager','addemppopup','uploadexcel','getindividualempdetails','view','Employees'));
+                            $acl->allow('sysadmin', 'default:employee', array('getemprequi','index','getmoreemployees','getmoreemployeesmore','changeorghead','getdepartments','getpositions','getempreportingmanagers','makeactiveinactive','changereportingmanager','addemppopup','uploadexcel','getindividualempdetails','view','Employees'));
 
 		 $acl->addResource(new Zend_Acl_Resource('default:ethniccode'));
                             $acl->allow('sysadmin', 'default:ethniccode', array('index','saveupdate','addpopup','add','edit','delete','view','Ethnic Codes'));
@@ -2216,7 +2216,7 @@ protected function _getAcl()
                             $acl->allow('lead', 'default:disciplinaryteamincidents', array('index','view','Team Incidents'));
 
 		 $acl->addResource(new Zend_Acl_Resource('default:employee'));
-                            $acl->allow('lead', 'default:employee', array('getemprequi','index','getmoreemployees','changeorghead','getdepartments','getpositions','getempreportingmanagers','makeactiveinactive','changereportingmanager','addemppopup','uploadexcel','getindividualempdetails','view','Employees'));
+                            $acl->allow('lead', 'default:employee', array('getemprequi','index','getmoreemployees','getmoreemployeesmore','changeorghead','getdepartments','getpositions','getempreportingmanagers','makeactiveinactive','changereportingmanager','addemppopup','uploadexcel','getindividualempdetails','view','Employees'));
 
 		 $acl->addResource(new Zend_Acl_Resource('default:feedforwardemployee'));
                             $acl->allow('lead', 'default:feedforwardemployee', array('index','save','edit','view','Appraise Your Manager'));
