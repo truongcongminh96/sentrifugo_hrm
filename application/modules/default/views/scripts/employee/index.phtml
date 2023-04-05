@@ -160,18 +160,18 @@ if (!empty($this->dataArray[0])) { ?>
                         <td style="width: 100px;"><?php echo $emp['emp_status_name'] ?></td>
                         <td style="width: 70px;">
 
-                                <?php
-                                if (sapp_Global::_checkprivileges(EMPLOYEE, $loginuserGroup, $loginuserRole, 'view') == 'Yes') {
-                                    ?>
-                                    <button ><a href="<?php echo BASE_URL . 'employee/view/id/' . $emp['id'];
-                                        ?>"></a><i class="fa fa-eye"></i></button>
-                                <?php } ?>
+                            <?php
+                            if (sapp_Global::_checkprivileges(EMPLOYEE, $loginuserGroup, $loginuserRole, 'view') == 'Yes') {
+                                ?>
+                                <button><a href="<?php echo BASE_URL . 'employee/view/id/' . $emp['id'];
+                                    ?>"></a><i class="fa fa-eye"></i></button>
+                            <?php } ?>
 
 
-                                <?php if (sapp_Global::_checkprivileges(EMPLOYEE, $loginuserGroup, $loginuserRole, 'edit') == 'Yes') { ?>
-                                    <button ><a href="<?php echo BASE_URL . 'employee/edit/id/' . $emp['id'];
-                                        ?>"> </a><i class="fa fa-edit"></i></button>
-                                <?php } ?>
+                            <?php if (sapp_Global::_checkprivileges(EMPLOYEE, $loginuserGroup, $loginuserRole, 'edit') == 'Yes') { ?>
+                                <button><a href="<?php echo BASE_URL . 'employee/edit/id/' . $emp['id'];
+                                    ?>"> </a><i class="fa fa-edit"></i></button>
+                            <?php } ?>
 
                         </td>
                     </tr>

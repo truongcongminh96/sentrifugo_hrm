@@ -31,8 +31,18 @@ if ($this->empflag == 'myemployees') {
 }
 ?>
 <?php if ($this->totalcount > 0) { ?>
-<table>
-
+<table style="margin-top: 20px">
+    <tr>
+        <th>userfullname</th>
+        <th>emprole_name</th>
+        <th>department_name</th>
+        <th>employeeId</th>
+        <th>emailaddress</th>
+        <th>contactnumber</th>
+        <th>reporting_manager_name</th>
+        <th>emp_status_name</th>
+        <th>Action</th>
+    </tr>
     <?php
     foreach ($this->dataArray as $data) {
         foreach ($data as $emp) {
@@ -50,15 +60,15 @@ if ($this->empflag == 'myemployees') {
                 <td style="width: 103px;"><?php echo $emp['emp_status_name'] ?></td>
                 <td style="width: 70px;">
                     <?php
-                    if (sapp_Global::_checkprivileges(EMPLOYEE, $loginuserGroup, $loginuserRole, 'view') == 'Yes') {
+                    if (sapp_Global::_checkprivileges($roleflag, $loginuserGroup, $loginuserRole, 'view') == 'Yes') {
                         ?>
-                        <button ><a href="<?php echo BASE_URL . 'employee/view/id/' . $emp['id'];
+                        <button><a href="<?php echo BASE_URL . 'employee/view/id/' . $emp['id'];
                             ?>"></a><i class="fa fa-eye"></i></button>
                     <?php } ?>
 
 
-                    <?php if (sapp_Global::_checkprivileges(EMPLOYEE, $loginuserGroup, $loginuserRole, 'edit') == 'Yes') { ?>
-                        <button ><a href="<?php echo BASE_URL . 'employee/edit/id/' . $emp['id'];
+                    <?php if (sapp_Global::_checkprivileges($roleflag, $loginuserGroup, $loginuserRole, 'edit') == 'Yes') { ?>
+                        <button><a href="<?php echo BASE_URL . 'employee/edit/id/' . $emp['id'];
                             ?>"> </a><i class="fa fa-edit"></i></button>
                     <?php } ?>
                 </td>
