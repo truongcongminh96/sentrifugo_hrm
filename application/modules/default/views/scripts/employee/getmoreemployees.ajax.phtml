@@ -32,33 +32,23 @@ if ($this->empflag == 'myemployees') {
 ?>
 <?php if ($this->totalcount > 0) { ?>
 <table>
-    <tr>
-        <th>userfullname</th>
-        <th>emprole_name</th>
-        <th>department_name</th>
-        <th>employeeId</th>
-        <th>emailaddress</th>
-        <th>contactnumber</th>
-        <th>reporting_manager_name</th>
-        <th>emp_status_name</th>
-        <th>Action</th>
-    </tr>
+
     <?php
     foreach ($this->dataArray as $data) {
         foreach ($data as $emp) {
             ?>
             <tr>
                 <td style="width: 150px;"><?php echo $emp['userfullname'] ?></td>
-                <td style="width: 100px;"><?php echo $emp['emprole_name'] ?></td>
-                <td style="width: 50px;"><?php echo $emp['department_name'] ?></td>
+                <td style="width: 99px;"><?php echo $emp['emprole_name'] ?></td>
+                <td style="width: 103px;"><?php echo $emp['department_name'] ?></td>
 
                 <td style="width: 50px;"><?php echo $emp['employeeId'] ?></td>
-                <td style="width: 181px; max-width: 250px;"><?php echo $emp['emailaddress'] ?></td>
-                <td><?php echo $emp['contactnumber'] ?></td>
+                <td style="width: 183px; max-width: 250px;"><?php echo $emp['emailaddress'] ?></td>
+                <td style="width: 100px;"><?php echo $emp['contactnumber'] ?></td>
 
-                <td><?php echo $emp['reporting_manager_name'] ?></td>
-                <td><?php echo $emp['emp_status_name'] ?></td>
-                <td>
+                <td style="width: 150px;"><?php echo $emp['reporting_manager_name'] ?></td>
+                <td style="width: 103px;"><?php echo $emp['emp_status_name'] ?></td>
+                <td style="width: 70px;">
                     <?php
                     if (sapp_Global::_checkprivileges(EMPLOYEE, $loginuserGroup, $loginuserRole, 'view') == 'Yes') {
                         ?>

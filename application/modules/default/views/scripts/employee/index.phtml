@@ -154,11 +154,11 @@ if (!empty($this->dataArray[0])) { ?>
 
                         <td style="width: 50px;"><?php echo $emp['employeeId'] ?></td>
                         <td style="width: 150px; max-width: 250px"><?php echo $emp['emailaddress'] ?></td>
-                        <td><?php echo $emp['contactnumber'] ?></td>
+                        <td style="width: 100px;"><?php echo $emp['contactnumber'] ?></td>
 
-                        <td><?php echo $emp['reporting_manager_name'] ?></td>
-                        <td><?php echo $emp['emp_status_name'] ?></td>
-                        <td>
+                        <td style="width: 150px;"><?php echo $emp['reporting_manager_name'] ?></td>
+                        <td style="width: 100px;"><?php echo $emp['emp_status_name'] ?></td>
+                        <td style="width: 70px;">
 
                                 <?php
                                 if (sapp_Global::_checkprivileges(EMPLOYEE, $loginuserGroup, $loginuserRole, 'view') == 'Yes') {
